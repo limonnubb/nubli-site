@@ -999,7 +999,7 @@
             <li><a href="#commands">Команды</a></li>
             <li><a href="#stats">Статистика</a></li>
         </ul>
-        <a href="#" class="btn-invite" id="invite-btn">
+        <a href="https://discord.com/oauth2/authorize?client_id=1505964403416367184" class="btn-invite" id="invite-btn" target="_blank">
             <i class="fab fa-discord"></i> Добавить
         </a>
     </nav>
@@ -1022,7 +1022,7 @@
         </p>
 
         <div class="hero-buttons">
-            <a href="#" class="btn-primary" id="invite-btn-2">
+            <a href="https://discord.com/oauth2/authorize?client_id=1505964403416367184" class="btn-primary" id="invite-btn-2" target="_blank">
                 <i class="fab fa-discord"></i> Добавить в Discord
             </a>
             <a href="#commands" class="btn-secondary">
@@ -1210,7 +1210,7 @@
                     Один клик — и полный контроль в твоих руках.
                     Никаких настроек, просто добавь и используй.
                 </p>
-                <a href="#" class="btn-primary" id="invite-btn-3" style="font-size: 16px; padding: 18px 48px;">
+                <a href="https://discord.com/oauth2/authorize?client_id=1505964403416367184" class="btn-primary" id="invite-btn-3" style="font-size: 16px; padding: 18px 48px;" target="_blank">
                     <i class="fab fa-discord"></i> Добавить в Discord
                 </a>
             </div>
@@ -1447,12 +1447,7 @@
             setTimeout(() => toast.classList.remove('show'), 2500);
         }
 
-        document.querySelectorAll('#invite-btn, #invite-btn-2, #invite-btn-3').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                showToast('Ссылка на добавление бота будет здесь');
-            });
-        });
+
 
         const previewModal = document.getElementById('preview-modal');
         const previewBtn = document.getElementById('preview-btn');
